@@ -1,0 +1,58 @@
+@import "comment.css";
+*
+{
+    letter-spacing: 1px;
+    line-height: 18px;;
+}
+
+#fotabla td
+{
+    vertical-align: top;
+}
+
+#fotabla .fokep > img
+{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#fotabla .fokep
+{
+    width: 50%;
+    vertical-align: middle;
+}
+
+#rroll
+{
+    position: fixed;
+    width: 400px;
+    left: 5px;
+    top: 40vh;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    z-index: 100;
+    animation: rroll_beuszas 600s linear 0s infinite normal;
+}
+
+@keyframes rroll_beuszas
+{
+    0% {
+        left: -500px;
+    }
+    96% {
+        left: -500px;
+    }
+    97% {
+        left: 5px;
+    }
+    99% {
+        left: 5px;
+    }
+    100% {
+        left: -500px;
+    }
+}

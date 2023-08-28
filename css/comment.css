@@ -1,0 +1,43 @@
+.comment-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment-container .comment
+{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    background-color: linen;
+    border-radius: 10px;
+    color: black;
+}
+
+.comment-container .comment > h2
+{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.comment-container .comment > blockquote
+{
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+    text-indent: 20px;
+    z-index: 0;
+}
+
+.comment-container .comment > blockquote::before
+{
+    position: absolute;
+    content: "„";
+    font-size: 160px;
+    line-height: 0;
+    top: -25px;
+    left: -25px;
+    color: peachpuff;
+    z-index: -1;
+}

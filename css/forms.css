@@ -1,0 +1,105 @@
+body
+{
+    background-color: rgb(33,44,53);
+    background: url("../img/fixedhatter.png");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main
+{
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+fieldset
+{
+    border-radius: 5px;
+}
+
+form
+{
+    background-color: linen;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    width: 500px;
+    color: black;
+    box-shadow: 2px 2px 5px black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input[type="reset"],
+input[type="password"]
+{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+input[type="submit"]
+{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover
+{
+    background-color: #eee;
+}
+
+input[type="submit"]:active
+{
+    background-color: #999;
+}
+
+input[type="reset"]
+{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover
+{
+    background-color: #eee;
+}
+
+input[type="reset"]:active
+{
+    background-color: #999;
+}
+
+#sidezene
+{
+    position: fixed;
+    width: 400px;
+    right: 5px;
+    top: 40vh;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    z-index: 100;
+    animation: sidezene 600s linear 0s normal;
+}
+
+@keyframes sidezene
+{
+    0% {
+        right: -500px;
+    }
+    96% {
+        right: -500px;
+    }
+    100% {
+        right: 5px;
+    }
+}

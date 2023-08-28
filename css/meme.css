@@ -1,0 +1,116 @@
+.meme
+{
+    position: relative;
+    margin: 5px auto 20px;
+    padding: 0;
+    background-color: linen;
+    border-radius: 10px;
+    max-width: 650px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.meme-upload
+{
+    position: relative;
+    text-align: center;
+    margin: 5px auto 20px;
+    padding: 10px;
+    background-color: linen;
+    border-radius: 10px;
+    max-width: 650px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.meme .cim
+{
+    margin: 0;
+    padding: 10px 75px 0 20px;
+    font-size: 20px;
+}
+
+.meme .feltolto
+{
+    margin: 0;
+    padding: 0 75px 0px 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.meme .feltolto::before
+{
+    content: "Feltöltő: ";
+}
+
+.meme .datum
+{
+    margin: 0;
+    padding: 0 75px 10px 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.meme .datum::before
+{
+    content: "Feltöltés dátuma: ";
+}
+
+.meme .vote
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+.meme .upvote, .meme .downvote
+{
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    padding: 0;
+    border-top: none;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translate(0px, 0px) scale(1.0) rotate(0deg);
+    transition: transform 0.5s, border-radius 0.5s;
+}
+.meme .upvote.active
+{
+    border-bottom: 15px solid red;
+}
+
+.meme .downvote
+{
+    border-top: 15px solid black;
+    border-bottom: none;
+}
+.meme .downvote.active
+{
+    border-top: 15px solid red;
+    border-bottom: none;
+}
+
+.meme .upvote:hover, .meme .downvote:hover
+{
+    border-radius: 15px;
+    transform: translate(0px, -10px) scale(1.8) rotate(-20deg);
+    transition: transform 1s, border-radius 1s;
+}
+
+.meme .downvote:hover
+{
+    transform: translate(0px, 10px) scale(1.8) rotate(-20deg);
+}
+
+.meme > img
+{
+    display: block;
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #444, #999);
+}

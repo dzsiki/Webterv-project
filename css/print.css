@@ -1,0 +1,31 @@
+@media print {
+    article {
+        page-break-inside: avoid !important;
+    }
+
+    div 
+    {
+        page-break-inside: avoid !important;
+    }
+
+    #menu {
+        position: static !important;
+        border: none !important;
+    }
+
+    header {
+        display: none !important;
+    }
+
+    body {
+        background: none !important;
+    }
+
+    main {
+        background: none !important;
+        margin-top: 0px !important;
+        min-height: auto !important;
+    }
+
+    @page { margin: 0cm !important; }
+}

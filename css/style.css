@@ -1,0 +1,67 @@
+@import "menu.css";
+@import "print.css";
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(90deg, rgb(94, 94, 94),lightgray, white, lightgray, rgb(94, 94, 94));
+}
+
+main
+{
+    
+    margin: 70px auto 0 auto;
+    padding: 20px 10px;
+    min-width: 600px;
+    width: 50%;
+    background-color: lightgray;
+    min-height: 100vh;
+}
+
+main > img
+{
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer
+{
+    width: 100%;
+    background-color: black;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    box-shadow: 0px -2px 5px black;
+}
+
+
+.felkover
+{
+    font-weight: bold;
+}
+
+.focim
+{
+    text-align: center;
+    text-shadow: 2px 2px 5px;
+    font-size:xx-large;
+    font-style: italic;
+}
+
+.kozepre
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+ 

@@ -1,0 +1,17 @@
+main > img
+{
+    display: initial;
+    width: 50%;
+    float:left;
+    margin-right: 20px;
+    margin-top: 6.75%;
+}
+
+main 
+{
+    background: none;
+}
+main > p
+{
+    column-count: 2;
+}
